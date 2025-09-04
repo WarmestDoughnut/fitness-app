@@ -1,0 +1,113 @@
+/* Apply a full-page gradient background */
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0a2342 0%, #000000 100%);
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the main content and give it a card-like look */
+main {
+    background: rgba(20, 30, 50, 0.85);
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    max-width: 400px;
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a3bffa;
+    margin-bottom: 1.5rem;
+}
+
+/* Features list styling */
+main ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+main li {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    text-align: left;
+}
+
+/* CTA Button styling */
+#signup-btn {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(30,60,114,0.2);
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 1rem;
+}
+
+#signup-btn:hover {
+    background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: #7a8fa6;
+    text-align: center;
+}
+/* Center header content vertically and horizontally */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+    main {
+        padding: 1rem 0.5rem;
+        max-width: 95vw;
+        margin: 1rem 0;
+    }
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+    header p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    main li {
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+    }
+    #signup-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        margin-top: 0.75rem;
+    }
+    footer {
+        font-size: 0.85rem;
+        margin-top: 1rem;
+    }
+}
